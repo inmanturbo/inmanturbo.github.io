@@ -1,0 +1,18 @@
+name: Copy
+on: push
+jobs:
+  copy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Copycat
+      uses: andstor/copycat-action@v3
+      with:
+        personal_token: ${{ secrets.PERSONAL_TOKEN }}
+        src_path: /.
+        dst_path: /labs/
+        dst_owner: inmanturbo
+        dst_repo_name: inmanturbo.github.io
+        dst_branch: main
+        src_branch: main
+        username: nutsbot
+        email: andr3.storhaug+bot@gmail.com
