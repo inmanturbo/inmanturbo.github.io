@@ -1,6 +1,6 @@
 <?php
 
-require_once 'parsedown.php';
+require_once '../parsedown/parsedown.php';
 
 $uri = $_SERVER['REQUEST_URI'];
 
