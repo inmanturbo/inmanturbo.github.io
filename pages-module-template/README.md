@@ -1,0 +1,2 @@
+# pages-module-template
+index
