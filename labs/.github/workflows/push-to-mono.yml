@@ -14,5 +14,5 @@ jobs:
         dst_repo_name: inmanturbo.github.io
         dst_branch: main
         src_branch: main
-        username: nutsbot
-        email: andr3.storhaug+bot@gmail.com
+        username: inmanturbo
+        email: inmanturbo@users.noreply.github.com
