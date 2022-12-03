@@ -1,4 +1,6 @@
 ## Setup Traefik on TrueNAS-SCALE
+- Setup letsencrypt with cloudflare for https (Optional)
+  - [Guide](https)
 - ##### Change Ports for truenas web interface to 83 and 444
   - ##### system settings>general>GUI>settings
     - Web Interface HTTP Port: `83`
