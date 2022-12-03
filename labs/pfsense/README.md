@@ -3,7 +3,7 @@
 ## Installation
 
 - First you must install pfsense. 
-- #### You download here: https://www.pfsense.org/download/
+- #### You can download the installer: https://www.pfsense.org/download/
   - Use the iso for installing in a VM or over ipmi virtual media
   - Use the memstick img for flashing a usb to install on hardware
 - I recommend using default domain of `home.arpa` https://www.rfc-editor.org/rfc/rfc8375.html
