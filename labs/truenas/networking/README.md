@@ -26,7 +26,7 @@
   ```bash
   cli -c "network interface checkin"
   ```
-- reboot the TrueNAS-SCALE VM!
+- reboot TrueNAS-SCALE!
   
 ****due to the horrendous state of networking in scale, these changes must be done over direct console via spice or vnc and all network connectivity (to truenas scale) will be lost until reboot!***
 https://ixsystems.atlassian.net/browse/NAS-118915
