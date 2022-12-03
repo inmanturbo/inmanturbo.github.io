@@ -11,6 +11,6 @@
 ### [Networking](networking)
 - [Setting up a bridge](networking/README.md#setup-a-bridge-on-truenas-scale)
 
-### [Apps](apps)
+### [Solutions](apps)
 - [authentik](apps/authentik)
   - [Zero to Auth](apps/authentik/zero-to-auth)
