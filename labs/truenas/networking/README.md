@@ -2,7 +2,7 @@
 ## Setup a bridge on Truenas scale
 
 > NOTE:
-> First log into truenas over graphical spice or vnc (on vm), or ipmi or physical keyboard-video on baremental
+> First log into truenas over graphical spice or vnc (on vm), or ipmi or physical keyboard-video on bare metal
 
 - Locate a physical interface
   ```bash
