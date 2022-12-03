@@ -1,7 +1,8 @@
 ## Deploying apps as subdomains with ingress and local DNS
 
-> NOTE:
+> #### NOTE:
 > This example will use 192.168.1.99 for truenas static ip and example.com for hostname as placeholders
+> This example will use openspeedtest as an example app
 
 - Assign static ip to trueNAS-SCALE system [Docs](https://www.truenas.com/docs/scale/scaletutorials/network/interfaces/settingupstaticips/)
 - Add static mapping in dhcp server for trueNAS-SCALE system [pfsense example](../../pfsense#add-host-overrides-and-static-mappings)
