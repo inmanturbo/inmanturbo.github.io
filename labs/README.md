@@ -4,3 +4,4 @@
 
 #### [TrueNAS](truenas)
 #### [Ubuntu](linux/kvm-host/ubuntu-22.04)
+#### [PfSense](pfsense)
