@@ -6,3 +6,6 @@
 
 ### Getting Started
 - [qemu-kvm](deployment/qemu-kvm)
+
+### Networking
+- [Seting up a bridge](networking/README.md#setup-a-bridge-on-truenas-scale)
