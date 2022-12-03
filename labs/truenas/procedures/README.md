@@ -8,7 +8,7 @@
   - [Docs](https://www.truenas.com/docs/scale/scaletutorials/network/interfaces/settingupstaticips/)
 - Add static mapping in dhcp server for trueNAS-SCALE system [pfsense example](../../pfsense#add-host-overrides-and-static-mappings)
 
-- Install and setup traefik and with letsencrypt
+- Install and setup traefik and letsencrypt
 
 - Deploy The app 
   - Apps>Available Applications>openspeedtest>install
