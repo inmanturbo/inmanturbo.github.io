@@ -1,3 +1,7 @@
+# Zero to Auth
+
+Authentik reverse proxy auth from scratch with letsencrypt and traefik on truenas scale
+
 ## Setup letsencrypt on TrueNAS-SCALE
   - ##### add email to root account
     - credentials>local users>root>edit
