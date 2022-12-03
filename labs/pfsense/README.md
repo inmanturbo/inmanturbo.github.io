@@ -6,10 +6,18 @@
 - #### You can download the installer: https://www.pfsense.org/download/
   - Use the iso for installing in a VM or over ipmi virtual media
   - Use the memstick img for flashing a usb to install on hardware
+  
+    > Pfsense works well in a vm or on x86 hardware. On hardware you will need at least two NICs, 
+    > unless you are using going to use vlans to setup a `router on a stick`. 
+    > I don't have a guide for that yet, it it looks like there is one here: 
+    > https://blog.spirotot.com/posts/pfsense-vlans-with-one-nic-nuc-a-tp-link-tl-sg108e/
+
 - I recommend using default domain of `home.arpa` https://www.rfc-editor.org/rfc/rfc8375.html
   - Another reasonable option is to use something like `homelab.local`
-  - You can also use the name of a domain that you own, but I often use both and you will often run into scenarios in the lab where you need [split dns](https://docs.netgate.com/pfsense/en/latest/nat/reflection.html#split-dns). 
-  > I would not recommend using simply `.local` as it's overused by iot and other devices
+  - You can also use the name of a domain that you own, but I often use both and you will often run into scenarios in the lab where you need [split dns](https://docs.netgate.com/pfsense/en/latest/nat/reflection.html#split-dns).
+    
+    > I would not recommend using simply `.local` as it's overused by iot and other devices
+ 
  - Set your hostname under `System>General Setup`
  
 ## Setting up local dns
@@ -26,7 +34,9 @@
     server:qname-minimisation: yes
     ```
 - #### example for adding MX records for local test email server (optional)
+ 
   > MX records first need an A record. This can be done using `Host Overrides`
+  
   ```
   local-data: "mail.example.com. IN MX 10 mail.example.com."
   ```
