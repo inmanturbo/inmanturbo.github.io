@@ -6,9 +6,11 @@
   curl https://releases.ubuntu.com/22.04/ubuntu-22.04.1-desktop-amd64.iso -o ubuntu-22.04.1-desktop-amd64.iso
   ```
 - #### flash USB using balena or `dd` (`dd` example below)
-  > This could destroy your system if you flash to the wrong drive! Identify your flash drive first.
+  
+  > **This could destroy your system** if you flash to the wrong drive! Identify your flash drive first.
   > The hash at the start of the command here is for safety purposes if your are copy/pasting.
   > You must fist edit the command and remove the hash in order to run it!
+  
   ```
   # sudo dd if=ubuntu-22.04.1-desktop-amd64.iso of=/dev/sdx bs=1024k status=progress
   ```
