@@ -19,3 +19,9 @@
 
 ### [Procedures](procedures)
 - [Deploying Apps as Subdomains with Ingress and Local DNS](procedures/README.md#deploying-apps-as-subdomains-with-ingress-and-local-dns)
+
+
+### Reference
+- [PfSense](../pfsense)
+- [Truecharts Docs](https://truecharts.org/docs/manual/intro)
+- [Truecharts Charts](https://github.com/truecharts/charts)
