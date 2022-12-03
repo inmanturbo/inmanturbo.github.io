@@ -1,6 +1,6 @@
 ## Requirements
 
-Running labs here require a working installation of TrueNAS or TrueNAS-SCALE, depending on the guide.
+Running labs here will require a working installation of TrueNAS or TrueNAS-SCALE, depending on the guide you are following.
 you can find guides for getting set up [here](../README.md#getting-started) 
 > #### NOTE:
 > In many cases a basic understanding of networking, dns and linux are needed as well. 
