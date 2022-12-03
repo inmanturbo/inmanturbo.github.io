@@ -20,6 +20,10 @@
     bridge-utils zsys cockpit cockpit-machines net-tools openssh-server \
     zsh software-properties-common curl git libnss3-tools jq xsel xrdp
   ```
+  > NOTE:
+  > Alternatively, you may wish to first simply install openssh-server in the graphical environment,
+  > then do the rest over ssh, so that you can copy/paste.
+
 - #### (Optionally) Allow passwordless sudo for your user
   ```bash
   echo "${USER} ALL=(ALL) NOPASSWD: ALL" |sudo tee -a /etc/sudoers
