@@ -15,9 +15,7 @@
 ## Setting up local dns
  
 - Go to Services>DNS Resolver and check these options:
-  #### DHCP Registration 
   - [x] Register DHCP leases in the DNS Resolver
-  #### Static DHCP 
   - [x] Register DHCP static mappings in the DNS Resolver
  
 ## Add custom options
