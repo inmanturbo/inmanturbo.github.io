@@ -6,7 +6,7 @@
 
 ### Getting Started
 - [qemu-kvm](deployment/qemu-kvm)
-- [From scratch (with qemu-kvm)](misc/kvm-libvirt) 
+- [From scratch (with qemu-kvm)](https://github.com/inmanturbo/misc/tree/main/kvm-libvirt) 
 
 ### Networking
 - [Setting up a bridge](networking/README.md#setup-a-bridge-on-truenas-scale)
