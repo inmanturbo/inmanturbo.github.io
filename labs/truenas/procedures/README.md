@@ -67,8 +67,10 @@
            192.168.1.99 speedtest.example.com
            ```
   - Using Pfsense
+    
     > See [Host Overrides](../../pfsense#add-host-overrides-and-static-mappings)
     > And [Pfsense API](../../pfsense#add-packages)
+    
     ```
     curl -u "admin:${PASSWORD}" -X POST http://pfsense.home.arpa/api/v1/services/unbound/host_override \
       -H 'Content-Type: application/json' \
