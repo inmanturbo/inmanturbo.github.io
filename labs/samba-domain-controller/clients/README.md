@@ -2,7 +2,7 @@
 > Make sure your client installation can find your domain controller via dns. 
 > The simplest way is Setting up a [Domain Override](../../pfsense#active-directory)
 
-## Ubuntu desktop> Make sure your ubuntu installation can find your domain controller via dns. 
+## Ubuntu desktop
 > The simplest way is Setting up a [Domain Override](../../pfsense#active-directory)
 ### Getting the desktop iso
 ```bash
