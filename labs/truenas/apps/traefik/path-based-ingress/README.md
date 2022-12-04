@@ -117,7 +117,7 @@ Using subdirectory paths to serve multiple apps under the same (sub)domain
   /librespeed
   ```
     
-- #### Apps>Available Applications>openspeedtest
+- #### Apps>Available Applications>librespeed
   - #### Enable Ingress
     #### Main Ingress
     - [x] Enable ingress
