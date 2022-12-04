@@ -2,6 +2,9 @@
 
 Using subdirectory paths to serve multiple apps under the same domain (Without using subdomains)
 
+> #### NOTE:
+> This example will serve openspeedtest app under `https://example.com/speedtest`
+
 - #### Apps>Available Applications>openspeedtest
   - #### Enable Ingress
     #### Main Ingress
