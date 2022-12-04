@@ -1,3 +1,7 @@
+## Path based Ingress
+
+Using subdirectory paths to serve multiple apps under the same domain (Without using subdomains)
+
 - #### Apps>Available Applications>openspeedtest
   - #### Enable Ingress
     #### Main Ingress
