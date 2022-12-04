@@ -3,7 +3,7 @@
 ## Installation
 
 - First you must install pfsense. 
-- #### You can download the installer: https://www.pfsense.org/download/
+- #### You can download the installer here: [www.pfsense.org/download/](https://www.pfsense.org/download/)
   - Use the iso for installing in a VM or over ipmi virtual media
   - Use the memstick img for flashing a usb to install on hardware
   
@@ -12,7 +12,7 @@
     > I don't have a guide for that yet, it it looks like there is one here: 
     > https://blog.spirotot.com/posts/pfsense-vlans-with-one-nic-nuc-a-tp-link-tl-sg108e/
 
-- I recommend using default domain of `home.arpa` https://www.rfc-editor.org/rfc/rfc8375.html
+- I recommend using default domain of `home.arpa` [rfc](https://www.rfc-editor.org/rfc/rfc8375.html)
   - Another reasonable option is to use something like `homelab.local`
   - You can also use the name of a domain that you own, but I often use both and you will often run into scenarios in the lab where you need [split dns](https://docs.netgate.com/pfsense/en/latest/nat/reflection.html#split-dns).
     
