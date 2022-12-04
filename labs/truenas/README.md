@@ -14,6 +14,7 @@
 ### [Solutions](apps)
 - [authentik](apps/authentik)
   - [Zero to Auth](apps/authentik/zero-to-auth)
+  - [Active Directory](apps/authentik/active-directory)
 - [traefik](apps/traefik)
   - [Trafik with https using Cloudflare and letsencrypt](apps/traefik/https)
 
