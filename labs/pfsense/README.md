@@ -58,6 +58,12 @@
      - Enter Hostname, e.g. `truenas`
      - Enter Domain, e.g. `home.arpa`
   
+  ## Active Directory
+  - I use a Domain Override for Active Directory
+    - Services>DNS Resolver>Host Overrides [Add]
+      - Domain, e.g: `ad-home.arpa`
+      - IP Address: The ip address of your [Samba Active Directory Domain Controller](../samba-domain-controller)
+  
   ## Add Packages
   
   > To avoid having to fill in these forms all the time, a Rest api can be added to pfsense
