@@ -50,7 +50,7 @@
       ```
       
 - Add local DNS Entry for The app's subdomain to resolve trueNAS-SCALE system using one of the following options:
-  - Entry in host file
+  - #### Entry in hosts file on your local workstation
      - On Mac or Linux
        ```bash
        echo "192.168.1.99 speedtest.example.com" | sudo tee -a /etc/hosts
@@ -66,7 +66,7 @@
            ```
            192.168.1.99 speedtest.example.com
            ```
-  - Using Pfsense
+  - #### Using Pfsense
     
     > See [Host Overrides](../../pfsense#add-host-overrides-and-static-mappings)
     > And [Pfsense API](../../pfsense#add-packages)
