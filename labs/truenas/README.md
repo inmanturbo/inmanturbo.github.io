@@ -16,7 +16,8 @@
   - [Zero to Auth](apps/authentik/zero-to-auth)
   - [Active Directory](apps/authentik/active-directory)
 - [traefik](apps/traefik)
-  - [Trafik with https using Cloudflare and letsencrypt](apps/traefik/https)
+  - [Traefik with https using Cloudflare and letsencrypt](apps/traefik/https)
+  - [Path Based Ingress](apps/traefik/path-based-ingress)
 
 ### [Procedures](procedures)
 - [Deploying Apps as Subdomains with Ingress and Local DNS](procedures/README.md#deploying-apps-as-subdomains-with-ingress-and-local-dns)
