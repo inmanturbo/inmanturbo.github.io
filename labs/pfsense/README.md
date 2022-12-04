@@ -68,9 +68,18 @@
       pkg add https://github.com/jaredhendrickson13/pfsense-api/releases/latest/download/pfSense-2.6-pkg-API.txz && /etc/rc.restart_webgui
       ```
   - Use Curl for host overrides, e.g
-    ```curl
-    curl -u "admin:${PASSWORD}" -X POST http://pfsense.home.arpa/api/v1/services/unbound/host_override \
-      -H 'Content-Type: application/json' \
-      -d '{"domain":"home.arpa","host":"truenas", "ip":"192.168.1.99"}'
-    ```
+    - Add host override
+      
+      ```bash
+      curl -u "admin:${PASSWORD}" -X POST http://pfsense.home.arpa/api/v1/services/unbound/host_override \
+        -H 'Content-Type: application/json' \
+        -d '{"domain":"example.com","host":"speedtest", "ip":"192.168.1.99"}'
+      ```
+    
+    - Reload DNS resolver to apply changes
+     
+     ```bash
+     curl -u "admin:${PASSWORD}" -X POST http://pfsense.home.arpa/api/v1/services/unbound/apply \
+       -H 'Content-Type: application/json' \
+       -d '{"async":"false"}'
     
