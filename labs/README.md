@@ -9,5 +9,6 @@ The only permanent fixtures in the actual physical lab space is the network gear
 In short I use this stuff as a staging ground for work. Nothing is permanent because the requirements tend to change depending on what I'm working on. If I ever do decide to set up a distinct homelab for my own personal I may will make an entry below like `#### [Homelab](homelab`)
 
 #### [TrueNAS](truenas)
-#### [Ubuntu](linux/kvm-host/ubuntu-22.04)
+#### [Ubuntu KVM Host](linux/kvm-host/ubuntu-22.04)
 #### [PfSense](pfsense)
+#### [Samba Domain Controller](samba-domain-controller)
