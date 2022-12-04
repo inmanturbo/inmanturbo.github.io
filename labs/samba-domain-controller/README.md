@@ -1,4 +1,4 @@
-## Samba domain controller on Ubuntu 22.04 LTS
+## Samba domain controller on Ubuntu Server 22.04 LTS
 
 ### Install cockpit for easy interface configuration
 
