@@ -152,13 +152,15 @@
   nano bridged-network.xml
   ```
 2. #### Paste in the following:
-  ```xml
-  <network>
+  
+   ```xml
+   <network>
    <name>default</name>
    <forward mode="bridge"/>
    <bridge name="br0"/>
-  </network>
-  ```
+   </network>
+   ```
+
 3. #### Stop the default network
   ```bash
   virsh net-destroy default
