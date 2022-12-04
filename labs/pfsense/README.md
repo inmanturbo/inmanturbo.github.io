@@ -82,4 +82,5 @@
      curl -u "admin:${PASSWORD}" -X POST http://pfsense.home.arpa/api/v1/services/unbound/apply \
        -H 'Content-Type: application/json' \
        -d '{"async":"false"}'
+     ```
     
