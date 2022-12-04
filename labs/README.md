@@ -10,4 +10,4 @@ Currently the only permanent fixtures in the actual physical lab space is the ne
 #### [Ubuntu KVM Host](linux/kvm-host/ubuntu-22.04)
 #### [PfSense](pfsense)
 #### [Samba Domain Controller](samba-domain-controller)
-     - [Clients](samba-domain-controller/clients)
+- [Clients](samba-domain-controller/clients)
