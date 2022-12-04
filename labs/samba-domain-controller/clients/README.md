@@ -31,4 +31,4 @@ Join VM to domain and use to manage it via RSAT:
 - right click start (window icon) > system > rename this pc (advanced)
 - Install `rsat` https://www.microsoft.com/en-us/download/details.aspx?id=45520
 - launch mmc
-- add snapins for ad and save as on desktop
+- add snapins for AD and `save as` on desktop

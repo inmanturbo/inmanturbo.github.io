@@ -59,6 +59,7 @@
      - Enter Domain, e.g. `home.arpa`
   
   ## Active Directory
+  
   - I use a Domain Override for Active Directory
     - Services>DNS Resolver>Host Overrides [Add]
       - Domain, e.g: `ad-home.arpa`
