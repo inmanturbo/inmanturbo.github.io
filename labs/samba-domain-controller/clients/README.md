@@ -3,7 +3,7 @@
 > The simplest way is Setting up a [Domain Override](../../pfsense#active-directory)
 
 ## Ubuntu desktop
-> The simplest way is Setting up a [Domain Override](../../pfsense#active-directory)
+
 ### Getting the desktop iso
 ```bash
 curl https://releases.ubuntu.com/22.04/ubuntu-22.04.1-desktop-amd64.iso -o ubuntu-22.04.1-desktop-amd64.iso
