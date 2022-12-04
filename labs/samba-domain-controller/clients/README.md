@@ -18,7 +18,7 @@ When the installer asks **Who Are You?** Check the box for Active Directory
 
 Enter the details and credentials for your domain controller in the next page
 
-### Windows example
+## Windows Desktop
 download here:
 https://www.microsoft.com/software-download/windows10
 
