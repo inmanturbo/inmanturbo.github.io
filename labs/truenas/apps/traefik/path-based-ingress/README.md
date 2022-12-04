@@ -1,9 +1,9 @@
 ## Path based Ingress
 
-Using subdirectory paths to serve multiple apps under the same domain (Without using subdomains)
+Using subdirectory paths to serve multiple apps under the same (sub)domain
 
 > #### NOTE:
-> This example will serve openspeedtest app under `https://example.com/speedtest`
+> This example will serve openspeedtest app under `https://apps.example.com/speedtest`
 > And strip the /speedtest prefix before sending the request backend app
 
 - #### Edit Traefik and define a stripprefix middleware fo the app
@@ -25,7 +25,7 @@ Using subdirectory paths to serve multiple apps under the same domain (Without u
 
     #### Configure Hosts [Add]
     ```
-    example.com
+    apps.example.com
     ```
   - #### Add path for subdirectory
     #### Configure Paths   [Add]
@@ -40,7 +40,7 @@ Using subdirectory paths to serve multiple apps under the same domain (Without u
     ```
   - #### Add Path(s) for assets and other routes
 
-    Because the openspeedtest app has no idea that it is being served from `/speedtest`,
+    Because the openspeedtest app has no idea that it is being served from `https://apps.example.com/speedtest` instead of `https://apps.example.com/`,
     we will need to add some additional paths in order for it to work properly.
   
     > #### Pro Tip:
@@ -86,7 +86,7 @@ Using subdirectory paths to serve multiple apps under the same domain (Without u
     #### Configure Certificate Hosts [Add]
     #### Host*
     ```
-    example.com
+    apps.example.com
     ```
     #### Select TrueNAS-SCALE Certificate
     ```
