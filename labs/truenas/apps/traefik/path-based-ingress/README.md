@@ -39,6 +39,9 @@ Using subdirectory paths to serve multiple apps under the same domain (Without u
     prefix
     ```
   - #### Add Path(s) for assets and other routes
+
+    Because the openspeedtest app has no idea that it is being served from `/speedtest`,
+    we will need to add some additional paths in order for it to work properly.
   
     > #### Pro Tip:
     > You can find asset paths by first deploying the app without adding any, 
