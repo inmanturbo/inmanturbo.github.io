@@ -54,7 +54,7 @@
        #### ARP Table Static Entry
        - [x] Create an ARP Table Static Entry for this MAC & IP Address pair
  - Add Host Override
-   - Go to Services>DNS Resolver>Host Overrides>Add
+   - Go to Services>DNS Resolver>Domain Overrides>Add
      - Enter Hostname, e.g. `truenas`
      - Enter Domain, e.g. `home.arpa`
   
