@@ -48,7 +48,7 @@ Using subdirectory paths to serve multiple apps under the same (sub)domain
     > then opening it in the browser looking at the 404 Errors in the browser console.
     
     > #### WARNING:
-    > You may have conficts of more than one app uses the same paths! I don't have a solution for this (yet).
+    > You may have conficts if more than one app uses the same paths! I don't have a solution for this (yet).
     
     #### Host
     Path *
