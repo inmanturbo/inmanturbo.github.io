@@ -12,5 +12,5 @@ but I will likely explore other virtualization platforms here as well, such as P
 > ### NOTE:
 > Many of these labs can be applied on VMWare ESXI, however it lacks the flexibility of linux with `vfio`. 
 > For instance it's not possible to passthrough to a trueNAS VM an onboard sata controller as a pcie device.
-> It can be done using a discrete, dedicated pcie HBA, which IMO is just not quite as simple and elegant as just installing
+> It can be done using a discrete, dedicated pcie HBA, which IMO is just not quite as clean and elegant as simply installing
 > a host OS on an embedded m.2 or nvme drive, then passing the sata controller through to TrueNAS VM.
