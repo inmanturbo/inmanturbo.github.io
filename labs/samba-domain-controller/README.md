@@ -1,6 +1,6 @@
 ## Samba domain controller on Ubuntu Server 22.04 LTS
 
-### Install cockpit for easy interface configuration
+Install cockpit for easy interface configuration
 
 ```
 sudo apt install -y cockpit
