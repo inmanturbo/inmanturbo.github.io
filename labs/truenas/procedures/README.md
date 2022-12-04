@@ -58,14 +58,14 @@
      - On Windows
        - Open cmd terminal as Administrator
          - In taskbar search box type `cmd` then press `CTL+SHIFT+ENTER`
-         - From Administrator cmd line open hosts file in notepad with elevated priviledges 
-           ```cmd
-            notepad c:\Windows\System32\Drivers\etc\hosts
-           ```
-         - Paste the following entry in an otherwise empty line at the end of the file:
-           ```
-           192.168.1.99 speedtest.example.com
-           ```
+       - From Administrator cmd line open hosts file in notepad with elevated priviledges 
+         ```cmd
+          notepad c:\Windows\System32\Drivers\etc\hosts
+         ```
+       - Paste the following entry in an otherwise empty line at the end of the file:
+         ```
+         192.168.1.99 speedtest.example.com
+         ```
   - #### Using Pfsense
     
     > See [Host Overrides](../../pfsense#add-host-overrides-and-static-mappings)
