@@ -13,10 +13,10 @@
     ```
     /speedtest
     ```
-    
     Path Type *
     ```
     prefix
+    ```
     
   - #### Add host to tls settings
     #### Configure TLS-Settings   [Add]
