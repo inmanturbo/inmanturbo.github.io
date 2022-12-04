@@ -70,9 +70,18 @@
     
     > See [Host Overrides](../../pfsense#add-host-overrides-and-static-mappings)
     > And [Pfsense API](../../pfsense#add-packages)
+    - Add host override
+      
+      ```bash
+      curl -u "admin:${PASSWORD}" -X POST http://pfsense.home.arpa/api/v1/services/unbound/host_override \
+        -H 'Content-Type: application/json' \
+        -d '{"domain":"example.com","host":"speedtest", "ip":"192.168.1.99"}'
+      ```
     
-    ```
-    curl -u "admin:${PASSWORD}" -X POST http://pfsense.home.arpa/api/v1/services/unbound/host_override \
-      -H 'Content-Type: application/json' \
-      -d '{"domain":"example.com","host":"speedtest", "ip":"192.168.1.99"}'
-    ```
+    - Reload DNS resolver to apply changes
+     
+     ```bash
+     curl -u "admin:${PASSWORD}" -X POST http://pfsense.home.arpa/api/v1/services/unbound/apply \
+       -H 'Content-Type: application/json' \
+       -d '{"async":"false"}'
+     ```
