@@ -1,4 +1,4 @@
-## Path based Ingress
+## Path Based Ingress
 
 Using subdirectory paths to serve multiple apps under the same (sub)domain
 
