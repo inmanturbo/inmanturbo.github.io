@@ -58,36 +58,36 @@
      - Enter Hostname, e.g. `truenas`
      - Enter Domain, e.g. `home.arpa`
   
-  ## Active Directory
+ ## Active Directory
   
-  - I use a Domain Override for Active Directory
-    - Services>DNS Resolver>Domain Overrides [Add]
-      - Domain, e.g: `ad-home.arpa`
-      - IP Address: The ip address of your [Samba Active Directory Domain Controller](../samba-domain-controller)
+ - I use a Domain Override for Active Directory
+  - Services>DNS Resolver>Domain Overrides [Add]
+    - Domain, e.g: `ad-home.arpa`
+    - IP Address: The ip address of your [Samba Active Directory Domain Controller](../samba-domain-controller)
   
-  ## Add Packages
+ ## Add Packages
   
-  > To avoid having to fill in these forms all the time, a Rest api can be added to pfsense
+ > To avoid having to fill in these forms all the time, a Rest api can be added to pfsense
   
-  - Install rest api
-    - Diagnostics>Command Prompt>Execute Shell Command
-      ```bash
-      pkg add https://github.com/jaredhendrickson13/pfsense-api/releases/latest/download/pfSense-2.6-pkg-API.txz && /etc/rc.restart_webgui
-      ```
-  - Use Curl for host overrides, e.g
-    - Add host override
-      
-      ```bash
-      curl -u "admin:${PASSWORD}" -X POST http://pfsense.home.arpa/api/v1/services/unbound/host_override \
-        -H 'Content-Type: application/json' \
-        -d '{"domain":"example.com","host":"speedtest", "ip":"192.168.1.99"}'
-      ```
-    
-    - Reload DNS resolver to apply changes
-     
-     ```bash
-     curl -u "admin:${PASSWORD}" -X POST http://pfsense.home.arpa/api/v1/services/unbound/apply \
-       -H 'Content-Type: application/json' \
-       -d '{"async":"false"}'
-     ```
-    
+- Install rest api
+  - Diagnostics>Command Prompt>Execute Shell Command
+    ```bash
+    pkg add https://github.com/jaredhendrickson13/pfsense-api/releases/latest/download/pfSense-2.6-pkg-API.txz && /etc/rc.restart_webgui
+    ```
+- Use Curl for host overrides, e.g
+  - Add host override
+
+    ```bash
+    curl -u "admin:${PASSWORD}" -X POST http://pfsense.home.arpa/api/v1/services/unbound/host_override \
+      -H 'Content-Type: application/json' \
+      -d '{"domain":"example.com","host":"speedtest", "ip":"192.168.1.99"}'
+    ```
+
+  - Reload DNS resolver to apply changes
+
+   ```bash
+   curl -u "admin:${PASSWORD}" -X POST http://pfsense.home.arpa/api/v1/services/unbound/apply \
+     -H 'Content-Type: application/json' \
+     -d '{"async":"false"}'
+   ```
+
