@@ -102,7 +102,7 @@ Using subdirectory paths to serve multiple apps under the same (sub)domain
 - Repeat with different paths for as many apps as you like (librespeed example below)
 
 > #### NOTE:
-> This example will serve openspeedtest app under `https://apps.example.com/librespeed`
+> This example will serve librespeed app under `https://apps.example.com/librespeed`
 > And strip the `/librespeed` prefix before sending the request backend app
 
 - #### Edit Traefik and define a stripprefix middleware fo the app
