@@ -37,3 +37,5 @@ Using subdirectory paths to serve multiple apps under the same domain (Without u
     ```
     example_com_cert   ˅
     ```
+
+- Repeat with different paths for as many apps as you like
