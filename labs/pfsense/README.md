@@ -54,14 +54,14 @@
        #### ARP Table Static Entry
        - [x] Create an ARP Table Static Entry for this MAC & IP Address pair
  - Add Host Override
-   - Go to Services>DNS Resolver>Domain Overrides>Add
+   - Go to Services>DNS Resolver>Host Overrides>Add
      - Enter Hostname, e.g. `truenas`
      - Enter Domain, e.g. `home.arpa`
   
   ## Active Directory
   
   - I use a Domain Override for Active Directory
-    - Services>DNS Resolver>Host Overrides [Add]
+    - Services>DNS Resolver>Domain Overrides [Add]
       - Domain, e.g: `ad-home.arpa`
       - IP Address: The ip address of your [Samba Active Directory Domain Controller](../samba-domain-controller)
   
