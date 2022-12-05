@@ -140,6 +140,10 @@ Authentik reverse proxy auth from scratch with letsencrypt and traefik on truena
    - Provider>Select>speedtest
    - Click `Create`
 
+## Add Proxy Provider to outpost
+- Applications>Outposts>authentik Embedded Outpost>Edit
+  - `CTL+CLICK` to highlight new provider `speetest(https://speedtest.example.com)` 
+
 ## Secure app using authentik middleware
 - #### Apps>Available Applications>openspeedtest
   - #### Enable Ingress
