@@ -39,6 +39,11 @@ Authentik reverse proxy auth from scratch with letsencrypt and traefik on truena
 
 ## Setup Traefik on TrueNAS-SCALE
 - ##### Change Ports for truenas web interface to 83 and 444
+  
+  > #### IMPORTANT!
+  > After changinging the port for the web interface, truenas ui can only be access on the new ports!
+  > E.G. `http://truenas_ip_or_hostname:83`
+  
   - ##### system settings>general>GUI>settings
     - Web Interface HTTP Port: `83`
     - Web Interface HTTPS Port: `444`
