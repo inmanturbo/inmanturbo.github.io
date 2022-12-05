@@ -30,6 +30,7 @@ Authentik reverse proxy auth from scratch with letsencrypt and traefik on truena
 
 ## Add [Truecharts](https://github.com/truecharts/charts) to TrueNAS-SCALE
 >When opening the Apps menu item on TrueNAS-SCALE for the first time, you get prompted to setup a new pool for Apps. This will create a new dataset on the selected pool called "ix-applications", which will contain all docker containers and most application data, unless specified otherwise.
+
 - #### Apps>Manage Catalogs [Add Catalog]
   - Name: `truecharts`
   - Repository: `https://github.com/truecharts/catalog`
