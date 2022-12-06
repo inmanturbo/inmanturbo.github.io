@@ -3,6 +3,7 @@
 Authentik reverse proxy auth from scratch with letsencrypt and traefik on truenas scale
 
 ## Setup letsencrypt on TrueNAS-SCALE
+  
   - ##### add email to root account
     - credentials>local users>root>edit
   - ##### setup acme dns authenticator
@@ -16,7 +17,9 @@ Authentik reverse proxy auth from scratch with letsencrypt and traefik on truena
       - permissions: 
         - `Zone` `Zone` `Read`
         - `Zone` `DNS` `Edit`   
+
 ### Add csr
+
 - ##### credentials>certificates>Certificate Signing Requests>add
   - name: eg example_com_csr
   - fill in required fields (use something like homelab for organization)
@@ -29,6 +32,7 @@ Authentik reverse proxy auth from scratch with letsencrypt and traefik on truena
       - Authenticator: Cloudflare
 
 ## Add [Truecharts](https://github.com/truecharts/charts) to TrueNAS-SCALE
+
 >When opening the Apps menu item on TrueNAS-SCALE for the first time, you get prompted to setup a new pool for Apps. This will create a new dataset on the selected pool called "ix-applications", which will contain all docker containers and most application data, unless specified otherwise.
 
 - #### Apps>Manage Catalogs [Add Catalog]
@@ -38,6 +42,7 @@ Authentik reverse proxy auth from scratch with letsencrypt and traefik on truena
   - Branch: `main`
 
 ## Setup Traefik on TrueNAS-SCALE
+
 - ##### Change Ports for truenas web interface to 83 and 444
   
   > #### IMPORTANT!
@@ -61,6 +66,7 @@ Authentik reverse proxy auth from scratch with letsencrypt and traefik on truena
       ```
       
 ## Setup Authentik behind traefik on TrueNAS-SCALE
+
 - #### Configure Authentik app in TrueNAS-SCALE:
   - #### In the ingress section add a host with slash path for each domain that authentik will run on
     #### Configure Hosts   [Add]
@@ -110,6 +116,7 @@ Authentik reverse proxy auth from scratch with letsencrypt and traefik on truena
     ```
     
 ## Configure Middleware in traefik on TrueNAS-SCALE
+
 - Apps>traefik>edit
   - Middlewares>forwardAuth>Add
   - name: `authentik`
@@ -128,6 +135,7 @@ Authentik reverse proxy auth from scratch with letsencrypt and traefik on truena
     - `X-authentik-meta-version`
 
 ## Create and Configure Application and Proxy Provider in Authentik:
+
 - Applications>Applications>Create
   - name, e.g.: `speedtest`
   - slug, e.g.: `speedtest`
@@ -141,10 +149,12 @@ Authentik reverse proxy auth from scratch with letsencrypt and traefik on truena
    - Click `Create`
 
 ## Add Application to outpost
+
 - Applications>Outposts>authentik Embedded Outpost>Edit
   - `CTL+CLICK` to highlight new application `speetest(https://speedtest.example.com)` 
 
 ## Secure App in TrueNAS-SCALE using authentik middleware
+
 - #### Apps>Available Applications>openspeedtest
   - #### Enable Ingress
     #### Main Ingress
