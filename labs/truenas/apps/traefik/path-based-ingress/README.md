@@ -99,7 +99,9 @@ Using subdirectory paths to serve multiple apps under the same (sub)domain
      speedtest-stripprefix
      ```
 
-- Repeat with different paths for as many apps as you like (librespeed example below)
+- #### Repeat with different paths for as many apps as you like 
+
+librespeed example
 
 > #### NOTE:
 > This example will serve librespeed app under `https://apps.example.com/librespeed`
