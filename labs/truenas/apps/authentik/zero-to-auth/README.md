@@ -127,7 +127,7 @@ Authentik reverse proxy auth from scratch with letsencrypt and traefik on truena
     - `X-authentik-meta-app`
     - `X-authentik-meta-version`
 
-## Configure Proxy Provider in Authentik:
+## Create and Configure Application and Proxy Provider in Authentik:
 - Applications>Applications>Create
   - name, e.g.: `speedtest`
   - slug, e.g.: `speedtest`
@@ -140,9 +140,9 @@ Authentik reverse proxy auth from scratch with letsencrypt and traefik on truena
    - Provider>Select>speedtest
    - Click `Create`
 
-## Add Proxy Provider to outpost
+## Add Application to outpost
 - Applications>Outposts>authentik Embedded Outpost>Edit
-  - `CTL+CLICK` to highlight new provider `speetest(https://speedtest.example.com)` 
+  - `CTL+CLICK` to highlight new application `speetest(https://speedtest.example.com)` 
 
 ## Secure app using authentik middleware
 - #### Apps>Available Applications>openspeedtest
