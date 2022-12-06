@@ -144,7 +144,7 @@ Authentik reverse proxy auth from scratch with letsencrypt and traefik on truena
 - Applications>Outposts>authentik Embedded Outpost>Edit
   - `CTL+CLICK` to highlight new application `speetest(https://speedtest.example.com)` 
 
-## Secure app using authentik middleware
+## Secure App in TrueNAS-SCALE using authentik middleware
 - #### Apps>Available Applications>openspeedtest
   - #### Enable Ingress
     #### Main Ingress
