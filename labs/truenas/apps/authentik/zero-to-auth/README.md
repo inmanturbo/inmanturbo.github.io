@@ -1,13 +1,13 @@
 # Zero to Auth
 
-Authentik reverse proxy auth from scratch with letsencrypt and traefik on truenas scale
+Authentik reverse proxy auth from scratch with Letsencrypt and Traefik on TrueNAS-SCALE
 
-## Setup letsencrypt on TrueNAS-SCALE
+## Setup Letsencrypt on TrueNAS-SCALE
   
-  - ##### add email to root account
-    - credentials>local users>root>edit
-  - ##### setup acme dns authenticator
-    - credentials>certificates>acme dns authenticators>add
+  - ##### Add email to root account
+    - Credentials>Local users>root>edit
+  - ##### Setup acme dns authenticator
+    - Credentials>Certificates>Acme DNS Authenticators>Add
     - name: cloudflare
     - authenticator: cloudflare
     - email: blank
@@ -20,9 +20,9 @@ Authentik reverse proxy auth from scratch with letsencrypt and traefik on truena
 
 ### Add csr
 
-- ##### credentials>certificates>Certificate Signing Requests>add
+- ##### Credentials>Certificates>Certificate Signing Requests>Add
   - name: eg example_com_csr
-  - fill in required fields (use something like homelab for organization)
+  - Fill in required fields (use something like homelab for organization)
   - Subject Alternate Names: `*.example.com`
   - Save
   - ##### Create Acme Certificate
@@ -43,17 +43,17 @@ Authentik reverse proxy auth from scratch with letsencrypt and traefik on truena
 
 ## Setup Traefik on TrueNAS-SCALE
 
-- ##### Change Ports for truenas web interface to 83 and 444
+- ##### Change Ports for TrueNAS web interface to 83 and 444
   
   > #### IMPORTANT!
-  > After changinging the port for the web interface, truenas ui can only be access on the new ports!
+  > After changinging the port for the web interface, TrueNAS UI can only be access on the new ports!
   > E.G. `http://truenas_ip_or_hostname:83`
   
-  - ##### system settings>general>GUI>settings
+  - ##### System Settings>General>GUI>Settings
     - Web Interface HTTP Port: `83`
     - Web Interface HTTPS Port: `444`
-- ##### Install traefik
-  - Apps>Available Applications>traefik>install
+- ##### Install Traefik
+  - Apps>Available Applications>traefik>Install
     - #### web Entrypoint Configuration
       Entrypoints Port *
       ```
@@ -65,7 +65,7 @@ Authentik reverse proxy auth from scratch with letsencrypt and traefik on truena
       443
       ```
       
-## Setup Authentik behind traefik on TrueNAS-SCALE
+## Setup Authentik behind Traefik on TrueNAS-SCALE
 
 - #### Configure Authentik app in TrueNAS-SCALE:
   - #### In the ingress section add a host with slash path for each domain that authentik will run on
@@ -115,7 +115,7 @@ Authentik reverse proxy auth from scratch with letsencrypt and traefik on truena
     example_com_cert   ˅
     ```
     
-## Configure Middleware in traefik on TrueNAS-SCALE
+## Configure Middleware in Traefik on TrueNAS-SCALE
 
 - Apps>traefik>edit
   - Middlewares>forwardAuth>Add
