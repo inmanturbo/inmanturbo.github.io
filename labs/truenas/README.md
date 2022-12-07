@@ -20,7 +20,7 @@
     - [Traefik with https using Cloudflare and letsencrypt](apps/traefik/https)
     - [Path Based Ingress](apps/traefik/path-based-ingress)
 - [Docker](docker)
-  - [Nginx Proxy Manager](nginx-proxy-manager)
+  - [Nginx Proxy Manager](docker/nginx-proxy-manager)
 
 ### [Procedures](procedures)
 - [Deploying Apps as Subdomains with Ingress and Local DNS](procedures/README.md#deploying-apps-as-subdomains-with-ingress-and-local-dns)
