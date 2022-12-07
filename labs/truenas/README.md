@@ -11,13 +11,16 @@
 ### [Networking](networking)
 - [Setting up a bridge](networking/README.md#setup-a-bridge-on-truenas-scale)
 
-### [Solutions](apps)
-- [authentik](apps/authentik)
-  - [Zero to Auth](apps/authentik/zero-to-auth)
-  - [Active Directory](apps/authentik/active-directory)
-- [traefik](apps/traefik)
-  - [Traefik with https using Cloudflare and letsencrypt](apps/traefik/https)
-  - [Path Based Ingress](apps/traefik/path-based-ingress)
+### Solutions
+- [Apps](apps)
+  - [authentik](apps/authentik)
+    - [Zero to Auth](apps/authentik/zero-to-auth)
+    - [Active Directory](apps/authentik/active-directory)
+  - [traefik](apps/traefik)
+    - [Traefik with https using Cloudflare and letsencrypt](apps/traefik/https)
+    - [Path Based Ingress](apps/traefik/path-based-ingress)
+- [Docker](docker)
+  - [Nginx Proxy Manager](nginx-proxy-manager)
 
 ### [Procedures](procedures)
 - [Deploying Apps as Subdomains with Ingress and Local DNS](procedures/README.md#deploying-apps-as-subdomains-with-ingress-and-local-dns)
