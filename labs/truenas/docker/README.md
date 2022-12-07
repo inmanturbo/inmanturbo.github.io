@@ -1,1 +1,1 @@
-(Nginx Proxy Manager)[nginx-proxy-manager]
+[Nginx Proxy Manager](nginx-proxy-manager)
