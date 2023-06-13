@@ -6,11 +6,11 @@
 
 - #### Download the iso from [truenas.com/download-truenas-scale](https://www.truenas.com/download-truenas-scale/)
   ```bash
-  curl https://download.truenas.com/TrueNAS-SCALE-Angelfish/22.02.4/TrueNAS-SCALE-22.02.4.iso -o TrueNAS-SCALE-22.02.4.iso
+  curl https://download.truenas.com/TrueNAS-SCALE-Angelfish/22.02.4/TrueNAS-SCALE-22.02.4.iso -o TrueNAS-SCALE-22.12.2.iso
   ```
 - Add the iso to the default storage pool
   ```bash
-  sudo cp TrueNAS-SCALE-22.02.4.iso /var/lib/libvirt/images
+  sudo cp TrueNAS-SCALE-22.12.2.iso /var/lib/libvirt/images
   ```
 - Use latest debian flavor
 - `20G` disk is more than enough
